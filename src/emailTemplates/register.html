@@ -1,0 +1,231 @@
+<!-- emailTemplate.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Registration</title>
+    <style>
+        body {
+            font-family: Titillium Web;
+            margin: 0;
+            padding: 0;
+            /* background-color: #f4f4f4; */
+        }
+
+        .email-container {
+            max-width: 800px;
+            margin: 0px auto;
+            /* background: #ffffff; */
+            border-radius: 8px;
+            overflow: hidden;
+            /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+        }
+
+        .header {
+            /* background: linear-gradient(135deg, #2e5d95, #2b6e79); */
+            /* color: #ffffff; */
+            text-align: center;
+            padding: 0px 20px 20px 20px;
+        }
+
+
+
+        .content {
+            padding: 30px;
+            color: #000;
+        }
+
+        .content h1 {
+            font-size: 26px;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .content p {
+            margin: 10px 0;
+            line-height: 21px;
+        }
+
+        .credentials {
+            /* background: #f9f9f9;
+      border: 1px solid #dddddd;
+      padding: 15px; */
+            border-radius: 4px;
+            /* margin: 20px 0; */
+            margin-top: 48px;
+            margin-bottom: 48px;
+        }
+
+        .credentials p {
+            margin: 5px 0;
+            /* font-weight: bold; */
+        }
+
+        .button-container {
+            text-align: center;
+            /* margin: 20px 0; */
+            margin-bottom: 48px;
+
+        }
+
+        .button-container a {
+            background: #008c72;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            display: inline-block;
+        }
+
+        .button-container a:hover {
+            background: #006b56;
+        }
+
+        .footer {
+            /* padding: 20px; */
+            font-size: 16px;
+            /* color: #666666;
+      text-align: center;
+      border-top: 1px solid #eeeeee; */
+            margin-top: 48px;
+        }
+
+        .footer a {
+            color: #008c72;
+            text-decoration: none;
+        }
+
+        a {
+            color: #008c72;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .heading {
+            margin-bottom: 64px !important;
+
+        }
+
+        .text-bold {
+            font-weight: 600;
+        }
+
+        /* Responsive Design for Laptops and Mobile Screens */
+        @media (max-width: 1279px) {
+            .email-container {
+                max-width: 100%;
+                /* margin: 0px auto; */
+            }
+
+            .header {
+                padding: 0px;
+            }
+
+            .content {
+                padding: 32px;
+            }
+
+            .content h1 {
+                font-size: 22px;
+            }
+
+            .button-container {
+                margin-bottom: 32px;
+            }
+
+            .button-container a {
+                font-size: 14px;
+                padding: 10px 18px;
+                /* margin-bottom: 32px; */
+            }
+
+            .heading {
+                margin-bottom: 32px !important;
+            }
+
+            .credentials {
+                margin-top: 32px;
+                margin-bottom: 32px;
+            }
+        }
+
+        @media (max-width: 769px) {
+            .email-container {
+                max-width: 100%;
+                margin: 0px auto;
+            }
+
+
+            .header {
+                padding: 0px;
+            }
+
+            .content {
+                padding: 32px;
+            }
+
+            .content h1 {
+                font-size: 20px;
+            }
+
+            .credentials p {
+                font-size: 14px;
+            }
+
+            .button-container a {
+                font-size: 13px;
+                /* padding: 8px 15px; */
+            }
+
+            .footer {
+                margin-top: 32px;
+                font-size: 12px;
+            }
+        }
+
+        .responsive-image {
+            width: 100%;
+            height: 160px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-container">
+
+        <div class="content">
+            <h1 class="heading">Welcome to Portal!</h1>
+            <p>Hi {{username}},</p>
+            <p>Your account has been successfully created. Below are your login credentials:</p>
+            <div class="credentials">
+                <p> <span class="text-bold">Email:</span> {{email}}</p>
+                <p><span class="text-bold">Password:</span> {{password}}</p>
+            </div>
+            <div class="button-container">
+                <a href="#" target="_blank">Login to Portal, In order to access you
+                    account!</a>
+            </div>
+            <p>Please keep this information safe and change your password when logging in for the first time. For
+                additional
+                support, reach out to our team at <a
+                    href="#">support@mail.com</a>.</p>
+            <p>Thank you for joining us!</p>
+            <div class="footer">
+                <p>Best regards,</p>
+                <p>Team</p>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
