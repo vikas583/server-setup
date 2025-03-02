@@ -2,7 +2,7 @@
   "name": "server",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Tiebreaker-Ai",
+  "author": "Server Setup - Vikas Arora",
   "license": "MIT",
   "scripts": {
     "build": "tsc && npm run copy-templates",
