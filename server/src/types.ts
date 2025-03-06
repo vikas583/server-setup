@@ -38,9 +38,20 @@ export enum UserRoles {
 
 export type TokenData = {
   email: string;
+  accountId: number;
   role: UserRoles;
 };
 
+export interface QueueRequest {
+  task: string;
+  url: string;
+}
+
+export interface QueueResponse {
+  // Define the structure of the response object here
+  data: any;
+  error?: string;
+}
 
 export type LoginUserResponse = {
   id: number;
@@ -78,6 +89,9 @@ export class AddCustomerRequest {
 
   @IsString()
   password: string;
+
+  @IsNumber()
+  accountId: number;
 
   @IsNumber()
   roleId: number;

@@ -1,5 +1,8 @@
 import { Column, CreateDateColumn, Entity, Index, JoinColumn, ManyToOne, OneToMany, OneToOne, PrimaryGeneratedColumn, Timestamp, UpdateDateColumn } from "typeorm";
+import { Roles } from "./roles";
 import { AdminRoles } from "./adminRoles";
+import { AdminLogs } from "./adminLogs";
+import { Regulations } from "./regulations";
 
 
 @Entity({ schema: process.env.DB_SCHEMA })
@@ -35,6 +38,12 @@ export class Admin {
 
     @Column({ nullable: false, default: false })
     isBlocked: Boolean
+
+    @OneToMany(() => AdminLogs, (adminLogs) => adminLogs)
+    adminLogs: AdminLogs[]
+
+    @OneToMany(() => Regulations, (regulations) => regulations.added)
+    regulations: Regulations[]
 
     @CreateDateColumn()
     createdAt: Date;

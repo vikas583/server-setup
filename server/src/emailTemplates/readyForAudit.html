@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ready for audit</title>
+    <style>
+        body {
+            font-family: 'Titillium Web';
+            margin: 0;
+            padding: 0;
+            /* background-color: #f4f4f4; */
+        }
+
+        .email-container {
+            max-width: 800px;
+            margin: 0px auto;
+            /* background: #ffffff; */
+            border-radius: 8px;
+            overflow: hidden;
+            /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+        }
+
+        .header {
+            /* background: linear-gradient(135deg, #2e5d95, #2b6e79); */
+            /* color: #ffffff; */
+            text-align: center;
+            padding: 0px 20px 20px 20px;
+        }
+
+
+
+        .content {
+            padding: 30px;
+            color: #000;
+        }
+
+        .content h1 {
+            font-size: 26px;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .content p {
+            margin: 10px 0;
+            line-height: 21px;
+        }
+
+        .credentials {
+            /* background: #f9f9f9;
+      border: 1px solid #dddddd;
+      padding: 15px; */
+            border-radius: 4px;
+            /* margin: 20px 0; */
+            margin-top: 48px;
+            margin-bottom: 48px;
+        }
+
+        .credentials p {
+            margin: 5px 0;
+            /* font-weight: bold; */
+        }
+
+        .button-container {
+            text-align: center;
+            /* margin: 20px 0; */
+            margin-bottom: 48px;
+
+        }
+
+        .button-container a {
+            background: #008c72;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            display: inline-block;
+        }
+
+        .button-container a:hover {
+            background: #006b56;
+        }
+
+        .footer {
+            /* padding: 20px; */
+            font-size: 16px;
+            /* color: #666666;
+      text-align: center;
+      border-top: 1px solid #eeeeee; */
+            margin-top: 48px;
+        }
+
+        .footer a {
+            color: #008c72;
+            text-decoration: none;
+        }
+
+        a {
+            color: #008c72;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .heading {
+            margin-bottom: 64px !important;
+
+        }
+
+        .text-bold {
+            font-weight: 600;
+        }
+
+        /* Responsive Design for Laptops and Mobile Screens */
+        @media (max-width: 1279px) {
+            .email-container {
+                max-width: 100%;
+                /* margin: 0px auto; */
+            }
+
+            .header {
+                padding: 0px;
+            }
+
+            .content {
+                padding: 32px;
+            }
+
+            .content h1 {
+                font-size: 22px;
+            }
+
+            .button-container {
+                margin-bottom: 32px;
+            }
+
+            .button-container a {
+                font-size: 14px;
+                padding: 10px 18px;
+                /* margin-bottom: 32px; */
+            }
+
+            .heading {
+                margin-bottom: 32px !important;
+            }
+
+            .credentials {
+                margin-top: 32px;
+                margin-bottom: 32px;
+            }
+        }
+
+        @media (max-width: 769px) {
+            .email-container {
+                max-width: 100%;
+                margin: 0px auto;
+            }
+
+
+            .header {
+                padding: 0px;
+            }
+
+            .content {
+                padding: 32px;
+            }
+
+            .content h1 {
+                font-size: 20px;
+            }
+
+            .credentials p {
+                font-size: 14px;
+            }
+
+            .button-container a {
+                font-size: 13px;
+                /* padding: 8px 15px; */
+            }
+
+            .footer {
+                margin-top: 32px;
+                font-size: 12px;
+            }
+        }
+
+        .responsive-image {
+            width: 100%;
+            height: 160px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('https://tiebreakeraiblob.blob.core.windows.net/templates/tiebreaker_logo_sm.png');
+        }
+
+        /* For screens between 769px and 1279px */
+        @media (min-width: 769px) and (max-width: 1279px) {
+            .responsive-image {
+                background-image: url('https://tiebreakeraiblob.blob.core.windows.net/templates/tiebreaker_logo_md.png');
+                height: 160px;
+                /* Adjust height if needed */
+            }
+        }
+
+        /* For screens wider than 1280px */
+        @media (min-width: 1280px) {
+            .responsive-image {
+                background-image: url('https://tiebreakeraiblob.blob.core.windows.net/templates/tiebreaker_logo_lg.png');
+                height: 160px;
+                /* Adjust height if needed */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-container">
+        <div class="header">
+            <div class="responsive-image"></div>
+
+        </div>
+        <div class="content">
+            <h1 class="heading">Your file is ready for audit!</h1>
+            <div style="line-height: 21px;">
+                <p>Hi {{username}},</p>
+                <p>Your document {{documentName}} in the project {{projectName}} has been successfully processed. You may now access Tiebreaker AI to continue on with your audit.</p>
+                <div class="credentials">
+                    <p> For more information on how to proceed with your audit, please contact our team at <a
+                            href="mailto:support@tiebreaker-ai.com">support@tiebreaker-ai.com</a></p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>Best regards,</p>
+                <p>Tiebreaker AI Team</p>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
