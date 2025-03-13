@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-font .MuiTypography-body1 {
+    /* font-size: 14px; */
+    font-weight: 600;
+}
+
+#id {
+    overflow-x: hidden;
+}
+
+.MuiButtonBase-root {
+    text-transform: none !important;
+}
+
+a {
+    color: #158281;
+}
+
+.diabled-button {
+    background-color: #158281 !important;
+    color: white !important;
+    opacity: 0.5;
+}
+
+.PrivateSwitchBase-root svg {
+    fill: #158281;
+}
+
+canvas {
+    height: unset !important;
+    width: auto !important;
+    max-width: 1000px;
+}
+
+.MuiFormLabel-asterisk {
+    color: red;
+}
+
+.MuiFormLabel-root {
+    color: #5C5F5B !important;
+}
+
+.cut-words {
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 40ch;
+
+}
+
+.custom-input::before,
+::after {
+    border-color: #F0F1EC !important;
+}
+
+.custom-input:hover {
+    border-color: #C5C7C2 !important;
+}
+
+canvas.react-pdf__Page__canvas {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.pdf-container {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+    position: relative;
+}
+
+.pdf-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.pdf-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.pdf-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.pdf-page {
+    position: relative;
+    width: 100%;
+}
+
+.box-shadow-dashboard {
+    border-radius: 6px;
+    box-shadow: 0px 0px 4px 0px rgba(170, 172, 167, 0.50);
+}
+
+.box-shadow-dashboard:hover {
+    border: 1px solid #90D1CA;
+    box-shadow: 0px 0px 4px 0px  rgba(21, 130, 119, 0.50);
+}
+.box-shadow-dashboard:active {
+    border: 1px solid #158277;
+    box-shadow: 0px 0px 4px 0px rgba(21, 130, 119, 0.50);
+}

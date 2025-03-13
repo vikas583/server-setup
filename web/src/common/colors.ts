@@ -1,0 +1,37 @@
+export const Colors = {
+    tertiary:'#158281',
+    backGound:'#f7f9f7d9',
+    greenMid:'#65bab2',
+    greenLight:'#1582771a',
+    greenDark:'#158277',
+    garkGrey:'#757478',
+    lightGrey:'#aaaca7',
+    lightestGrey:'#f7f9f7',
+    redLightest:'#ffdad6',
+    redBorder:'#ff5449',
+    grey:'#e1e3de',
+    midOrange:'#cc6626',
+    lightestOrange:'#cc66301a',
+    orange:'#cc6630',
+    greySecondary:'#5C5F5B',
+    spaceGrey800:'#414942',
+    naturalGrey600:'#757874',
+    neutralGrey010:'#aaaca71a',
+    neutralGrey500:'#8F918D',
+    marsianGreen010:'#00bc701a',
+    venusOrange600:'#FF7F30',
+    venusOrange010:'#ff7f301a',
+    naturalGrey900:'#2E312E',
+    cosmicRed700:'#BA1A1A',
+    CosmicRed600 :'#DE3730',
+    CosmicRed10 :'#DE37301A',
+    NightBlue200:'#BBEAFD',
+    NightBlue600:'#366475',
+    NightBlue950:'#001F28',
+    VenusOrange950:'#33190A',
+    VenusOrange100:'#FFDAC4',
+
+
+}
+
+//757874
